@@ -2,7 +2,7 @@
 
 ### Files included in project: ###
 * Bmps for each part of a rose: stem + 9 petals
-* Python tool to convert .data files generated from .bmps to the format expected by the [bmp drawer](https://github.com/adafruit/Adafruit-GFX-Library/blob/master/Adafruit_GFX.cpp#L464) in the Adafruit GFX library. See an example of the expected PROGMEM array [here]().
+* Python tool to convert .data files generated from .bmps to the format expected by the [bmp drawer](https://github.com/adafruit/Adafruit-GFX-Library/blob/master/Adafruit_GFX.cpp#L464) in the Adafruit GFX library. See an example of the expected PROGMEM array [here](https://github.com/adafruit/Adafruit_SSD1306/blob/master/examples/ssd1306_128x64_i2c/ssd1306_128x64_i2c.ino#L35).
 * Script to convert all the bmp-data files to progmem arrays at once.
 
 ### Methods ###
