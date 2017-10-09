@@ -305,7 +305,8 @@ B00000000
 };
 Petal petal_ten = petal_new(8, 8, 108, 32 + HEIGHT_OFFSET, petal_ten_bmp);
 
-Petal petals[] = {petal_one, petal_two, petal_three, petal_four, petal_five, petal_six, petal_seven, petal_eight, petal_nine, petal_ten};
+// These are ordered according to which should fall first
+Petal petals[] = {petal_ten, petal_nine, petal_seven, petal_eight, petal_six, petal_five, petal_four, petal_three, petal_one, petal_two};
 int current_petal = 0;
 int total_petals = 10;
 
@@ -351,7 +352,7 @@ void loop() {
 }
 
 void drawPetals() {
-  for (int i = 0; i < 10; i++) {
+  for (int i = 0; i < total_petals; i++) {
     Petal petal = petals[i];
     display.drawBitmap(petal.x, petal.y, petal.bitmap, petal.width, petal.height, 1);
   }
